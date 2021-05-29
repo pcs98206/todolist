@@ -1,9 +1,21 @@
+@import "reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500&display=swap");
+
+* {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
 body {
   background-color: rgb(248, 242, 236);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .form,
-.greeting {
+.greeting,
+.hide {
   display: none;
 }
 
@@ -19,7 +31,7 @@ body {
     opacity: 0.4;
   }
   100% {
-    opacity: 0.7;
+    opacity: 0.9;
   }
 }
 
@@ -27,8 +39,82 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   z-index: -1;
   animation: fadeIn 0.7s linear forwards;
+}
+
+.js-clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 160px;
+  font-weight: 600;
+  color: white;
+}
+
+.js-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.js-form input {
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  font-size: 40px;
+  text-align: center;
+}
+
+.js-form input::placeholder {
+  color: white;
+}
+
+.js-form input:focus,
+.js-mainTodoForm input:focus {
+  outline: none;
+}
+
+.js-mainTodoForm input:focus {
+  font-weight: 300;
+}
+
+.js-greeting {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  margin: 50px;
+}
+
+.js-mainTodoForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 30px;
+}
+
+.js-mainTodoForm input {
+  background-color: transparent;
+  color: white;
+  margin-top: 15px;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  font-size: 30px;
+  text-align: center;
+}
+
+.js-mainTodo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  color: white;
+  font-size: 30px;
 }
