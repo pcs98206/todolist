@@ -28,7 +28,7 @@ function paintToDo(txt){
     const span = document.createElement("span");
     span.innerText = txt;
     const newId = number;
-    number++
+    number++;
 
     li.appendChild(delBtn);
     li.appendChild(span);
