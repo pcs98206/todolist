@@ -1,0 +1,50 @@
+.section-mainTodo {
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.js-mainTodoForm input:focus {
+  font-weight: 300;
+}
+
+.js-mainTodoForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 30px;
+}
+
+.js-mainTodoForm input {
+  background-color: transparent;
+  color: white;
+  margin-top: 15px;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+  font-size: 30px;
+  text-align: center;
+}
+
+.js-mainTodo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 30px;
+}
+
+.js-mainTodo span {
+  font-size: 30px;
+  margin-top: 15px;
+  margin-right: 10px;
+}
+
+.js-mainTodo button {
+  font-size: 25px;
+  margin-top: 15px;
+  padding: 0;
+}
