@@ -1,0 +1,99 @@
+.aside {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 20vw;
+  height: 100vh;
+  right: 0;
+  background-color: rgba(128, 128, 128, 0.7);
+}
+
+/* Weather Section */
+
+.section-weather {
+  background-color: rgba(0, 0, 0, 0.8);
+  margin: 10px 20px;
+  padding: 20px 0;
+  border-radius: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  height: 40%;
+}
+
+.section-weather img {
+  background-color: rgba(248, 242, 236, 0.8);
+  border-radius: 50%;
+  width: 90px;
+  margin: 10px 0;
+  padding: 2px;
+}
+
+.section-weather .clothes span {
+  display: block;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.section-weather .clothes li {
+  font-size: 16px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+/* Todo List Section */
+
+.list-sections {
+  background-color: rgba(0, 0, 0, 0.8);
+  margin: 10px 20px;
+  padding: 20px;
+  border-radius: 20px;
+  color: white;
+  height: 60%;
+}
+
+.section-todoList {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.js-toDoForm input {
+  width: 90%;
+  margin-bottom: 5px;
+  font-size: 15px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.js-toDoForm input::placeholder {
+  color: white;
+  opacity: 0.7;
+}
+
+.section-todoList button,
+.finishList button {
+  font-size: 15px;
+  margin-left: 5px;
+}
+
+.js-toDoList li,
+.finishList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-finishList {
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+.finishList {
+  margin: 10px 0;
+}
