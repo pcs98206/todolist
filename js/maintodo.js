@@ -1,6 +1,7 @@
 const mainToDoForm = document.querySelector(".js-mainTodoForm"),
     mainToDoInput = mainToDoForm.querySelector("input"),
-    mainTodo = document.querySelector(".js-mainTodo");
+    mainTodo = document.querySelector(".js-mainTodo"),
+    starSpan = mainTodo.querySelector(".star");
 
 const MAINTODO_LS = "currentMainTodo"
 
@@ -11,7 +12,8 @@ function saveMainTodo(txt){
 function delMainTodo(event){
     const btn = event.target;
     const label = btn.parentNode;
-    const span = label.firstChild;
+    const span = label.children[1];
+    starSpan.classList.add("hide");
     label.removeChild(span);
     label.removeChild(btn);
 
@@ -22,11 +24,12 @@ function delMainTodo(event){
 function paintMainTodo(text){
     mainToDoInput.classList.add("hide");
     const span = document.createElement("span");
-    const delBtn = document.createElement("botton");
+    const delBtn = document.createElement("button");
     delBtn.innerText = "❌";
     span.innerText = text;
     mainTodo.appendChild(span);
     mainTodo.appendChild(delBtn);
+    starSpan.classList.remove("hide");
     saveMainTodo(text);
     delBtn.addEventListener("click", delMainTodo)
 }
