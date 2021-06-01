@@ -1,0 +1,85 @@
+.left {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 16vw;
+  height: 100vh;
+  left: 0;
+  background-color: rgba(128, 128, 128, 0.7);
+  color: white;
+}
+
+.national {
+  background-color: rgba(0, 0, 0, 0.8);
+  margin: 10px 20px;
+  padding-top: 20px;
+  border-radius: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 20px;
+  height: 20%;
+}
+
+.national-title {
+  text-align: center;
+}
+
+.national-data {
+  margin: 20px 30px;
+  font-size: 17px;
+}
+
+.national-data li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin: 10px 0;
+}
+
+.national-data li:first-child span:last-child {
+  font-size: 15px;
+  background-color: #ff4f70;
+  padding: 3px 6px;
+  border-radius: 10px;
+}
+
+.city {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin: 10px 20px;
+  padding: 25px 20px;
+  border-radius: 20px;
+  color: white;
+  height: 80%;
+}
+
+.city ul {
+  margin: 0 10px;
+  margin-bottom: 20px;
+}
+
+.city ul > span {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.city ul li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  font-size: 17px;
+}
+
+.seoul-list li:nth-child(2) span:last-child,
+.gyeonggi-list li:nth-child(2) span:last-child,
+.incheon-list li:nth-child(2) span:last-child {
+  font-size: 15px;
+  background-color: #ff4f70;
+  padding: 3px 6px;
+  border-radius: 10px;
+}
