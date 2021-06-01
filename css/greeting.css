@@ -1,0 +1,36 @@
+.section-name{
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.js-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.js-form input {
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+  font-size: 50px;
+  text-align: center;
+}
+
+.js-form input::placeholder {
+  color: white;
+  opacity: 0.9;
+}
+
+.js-greeting {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 50px;
+}
