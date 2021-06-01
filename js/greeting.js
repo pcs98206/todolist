@@ -22,10 +22,22 @@ function askForName(){
 }
 
 function paintGreeting(text){
+    const date = new Date();
+    const hours = date.getHours();
     input.classList.add("hide");
     form.classList.remove(SHOWING_CN);
     greeting.classList.add(SHOWING_CN);
     greeting.innerText = `Hello ${text}`;
+
+    if(hours >= 2 && hours <= 10){
+        greeting.innerText = `Good Morning! ${text}`;
+    } else if (hours>=11 && hours<=17){
+        greeting.innerText = `Good Afternoon! ${text}`;
+    } else if (hours>= 18 && hours<=22) {
+        greeting.innerText = `Good Evenig! ${text}`;
+    } else {
+        greeting.innerText = `Good Night! ${text}`;
+    }
 }
 
 function loadNmae(){
