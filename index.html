@@ -8,28 +8,75 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="js-clock">
-        <h1>00:00</h1>
-    </div>
+    <section class="section-clock">
+        <div class="js-clock">
+            <h1>00:00</h1>
+        </div>
+    </section>
 
-    <form action="" class="js-form form">
-        <input type="text" placeholder="What is your name?">
-    </form>
-    <h4 class="js-greeting greeting"></h4>
+    <section class="section-name">
+        <form action="" class="js-form form">
+            <input type="text" placeholder="What is your name?">
+        </form>
+        <h4 class="js-greeting greeting"></h4>
+    </section>
 
-    <form action="" class="js-mainTodoForm">
-        <span class="js-mainTodoTitle">What is your main focus for today?</span>
-        <input type="text">
-    </form>
-    <h5 class="js-mainTodo"></h5>
+    <section class="section-mainTodo">
+        <form action="" class="js-mainTodoForm">
+            <span class="js-mainTodoTitle">What is your main focus for today?</span>
+            <input type="text">
+        </form>
+        <h5 class="js-mainTodo">
+          <span class="star hide">✨</span>
+        </h5>
+    </section>
 
-    <form action="" class="js-toDoForm">
-        <input type="text" placeholder="Write a to do">
-    </form>
-    <ul class="js-toDoList">
-    </ul>
+    <aside class="aside-right">
+      <section class="section-weather">
+          <span class="tempAndLocation"></span>
+          <div class="weather-icon"><img src="icons/unknown.png" /></div>
+          <span class="mainWeather"></span>
+          <div class="clothes">
+              <span>✨오늘의 추천 옷차림✨</span>
+              <ul class="clothesList"></ul>
+          </div>
+      </section>
 
-    <span class="js-weather"></span>
+      <div class="list-sections">
+        <section class="section-todoList">
+            <span>To Do List</span>
+            <form action="" class="js-toDoForm">
+                <input type="text" placeholder="Write a to do">
+            </form>
+            <ul class="js-toDoList">
+            </ul>
+        </section>
+    
+        <section class="section-finishList">
+            <span>Finish</span>
+            <ul class="finishList">
+    
+            </ul>
+        </section>
+      </div>
+    </aside>
+    
+    <aside class="left">
+      <section class="national">
+        <span class="national-title">👨‍⚕️코로나 국내 현황👩‍⚕️</span>
+        <ul class="national-data">
+        </ul>
+      </section>
+
+      <section class="city">
+        <ul class="seoul-list">
+        </ul>
+        <ul class="gyeonggi-list">
+        </ul>
+        <ul class="incheon-list">
+        </ul>
+      </section>
+    </aside>
 
 </body>
 <script src="js/clock.js"></script>
@@ -38,4 +85,5 @@
 <script src="js/todo.js"></script>
 <script src="js/bg.js"></script>
 <script src="js/weather.js"></script>
+<script src="js/corona.js"></script>
 </html>
