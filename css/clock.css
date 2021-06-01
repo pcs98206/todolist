@@ -1,0 +1,16 @@
+.section-clock{
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.js-clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 160px;
+  font-weight: 600;
+  color: white;
+}
