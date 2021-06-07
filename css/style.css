@@ -61,3 +61,12 @@ input {
   z-index: -1;
   animation: fadeIn 0.7s linear forwards;
 }
+
+@media screen and (max-width: 1200px){
+  .aside-left{
+    display: none;
+  }
+  .aside-right{
+    display: none;
+  }  
+}
